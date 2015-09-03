@@ -13,17 +13,16 @@
 #CFLAGS The flags used in compiling and creating object files.  
 #This includes both "-Wall" and "-c".
 #The "-c" option is needed to create object files, i.e. .o files. 
-
 CC=g++
-CGLAGS=-c	-wall
+CGLAGS=-c	-Wall
 
 all:driver
 	
 driver:	main.o
-		$(CC)	main.cpp -odriver
+		$(CC)	main.o -o driver
 
-main.cpp: 
-		$(CC)	-$(CGLAGS) main.cpp
+main.o: main.cpp
+		$(CC)	$(CGLAGS) main.cpp
 
 clean:
 		rm *main.o driver
