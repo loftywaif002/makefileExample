@@ -1,2 +1,2 @@
 # makefileExample
-Write a Basic makefile to create compile it to make an executable from a object file.
+This is an example of how to write a basic makefile to create and compile a .cpp file to make an object file and then an executable file from it.
